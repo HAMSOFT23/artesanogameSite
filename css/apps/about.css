@@ -1,0 +1,121 @@
+/* ============================================
+   About App — Artesano Games Desktop Aesthetic
+   ============================================ */
+
+.about-app
+{
+    min-height: 100%;
+    background-color: var(--bg-window);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    padding: 40px 32px;
+}
+
+.about-content
+{
+    max-width: 640px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* Hero */
+.about-hero
+{
+    text-align: center;
+    padding-bottom: 24px;
+    border-bottom: 2px solid var(--border-light);
+}
+
+.about-banner
+{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+}
+
+/* Sections */
+.about-section
+{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.about-section-title
+{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+}
+
+.about-section p
+{
+    font-size: 0.9375rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+}
+
+/* Flag */
+.about-flag
+{
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4px;
+    image-rendering: pixelated;
+}
+
+/* Links */
+.about-app a
+{
+    color: var(--accent-primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color var(--transition-fast);
+}
+
+.about-app a:hover
+{
+    color: var(--accent-hover);
+    text-decoration: underline;
+}
+
+/* Footer */
+.about-footer
+{
+    text-align: center;
+    padding-top: 24px;
+    border-top: 2px solid var(--border-light);
+    margin-top: 8px;
+}
+
+.about-footer p
+{
+    font-size: 0.9375rem;
+    color: var(--text-muted);
+}
+
+/* Responsive */
+@media (max-width: 640px)
+{
+    .about-app
+    {
+        padding: 24px 20px;
+    }
+
+    .about-title
+    {
+        font-size: 1.5rem;
+    }
+
+    .about-team
+    {
+        flex-direction: column;
+    }
+}

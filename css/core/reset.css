@@ -1,0 +1,92 @@
+/* ============================================
+   Reset & Base Styles
+   ============================================ */
+
+*,
+*::before,
+*::after
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body
+{
+    font-family: var(--font-sans);
+    color: var(--text-primary);
+    background-color: var(--bg-desktop);
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    user-select: none;
+}
+
+button
+{
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: inherit;
+}
+
+img
+{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a
+{
+    color: var(--accent-primary);
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: var(--accent-hover);
+}
+
+:focus-visible
+{
+    outline: 2px solid var(--accent-primary);
+    outline-offset: 2px;
+}
+
+::-webkit-scrollbar
+{
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track
+{
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: var(--border-strong);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover
+{
+    background: var(--text-muted);
+}
+
+/* Hide scrollbar for desktop shell but keep functionality */
+.desktop-shell
+{
+    scrollbar-width: thin;
+    scrollbar-color: var(--border-strong) transparent;
+}

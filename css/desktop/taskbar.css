@@ -1,0 +1,172 @@
+/* ============================================
+   Taskbar / Dock
+   ============================================ */
+
+.taskbar
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: var(--taskbar-height);
+    background-color: var(--bg-taskbar);
+    border-top: 1px solid var(--border-light);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    z-index: 9999;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+.taskbar-start
+{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.taskbar-logo
+{
+    font-weight: 700;
+    font-size: 0.875rem;
+    color: var(--text-primary);
+    letter-spacing: -0.02em;
+}
+
+.taskbar-center
+{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex: 1;
+    justify-content: center;
+}
+
+.taskbar-app-item
+{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    border-radius: var(--radius-md);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: background-color var(--transition-fast), color var(--transition-fast);
+    position: relative;
+    max-width: 160px;
+}
+
+.taskbar-app-item:hover
+{
+    background-color: var(--bg-taskbar-hover);
+    color: var(--text-primary);
+}
+
+.taskbar-app-item.active
+{
+    background-color: var(--accent-primary);
+    color: var(--text-inverse);
+}
+
+.taskbar-app-item.active::after
+{
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--accent-primary);
+}
+
+.taskbar-app-icon
+{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.taskbar-app-icon img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    image-rendering: pixelated;
+}
+
+.taskbar-app-label
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.taskbar-end
+{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.taskbar-clock
+{
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    font-variant-numeric: tabular-nums;
+    min-width: 48px;
+    text-align: right;
+}
+
+.theme-toggle-btn
+{
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-md);
+    color: var(--text-secondary);
+    transition: background-color var(--transition-fast), color var(--transition-fast);
+    overflow: hidden;
+    padding: 4px;
+}
+
+.theme-toggle-btn img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    image-rendering: pixelated;
+}
+
+.theme-toggle-btn:hover
+{
+    background-color: var(--bg-taskbar-hover);
+    color: var(--text-primary);
+}
+
+/* Tablet: hide labels, show icons only */
+@media (max-width: 1023px)
+{
+    .taskbar-app-label
+    {
+        display: none;
+    }
+
+    .taskbar-logo
+    {
+        display: none;
+    }
+}
