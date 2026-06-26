@@ -31,7 +31,7 @@ export function init(container, windowId)
 
                 <div class="outnt-description">
                     <p>Outn't is a game developed by <a href="https://sagudelo.com/" target="_blank" rel="noopener noreferrer"> sagudelo </a> over a month. 
-                    With the music of Grayson Varn.</p>
+                    </p>
                 </div>
 
                     <div class="outnt-embed">
