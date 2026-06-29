@@ -31,7 +31,7 @@ export function init(container, windowId)
 
                 <div class="outnt-description">
                     <p>Outn't is a game developed by <a href="https://sagudelo.com/" target="_blank" rel="noopener noreferrer"> sagudelo </a> over a month. 
-                    With the music of Daniel Mejía.</p>
+                    <br>With the music of <a href="https://www.youtube.com/@EKozdm/featured" target="_blank" rel="noopener noreferrer"> Daniel Mejía </a>.</br></p>
                 </div>
 
                     <div class="outnt-embed">
@@ -43,7 +43,7 @@ export function init(container, windowId)
 
                 <div class="outnt-footer">
                     <span class="outnt-developer">by <a href="https://sagudelo.com/" target="_blank" rel="noopener noreferrer"> sagudelo </a></span>
-                    <span class="outnt-version">V.0.7.6</span>
+                    <span class="outnt-version">V.0.9.5</span>
                 </div>
             </div>
         </div>
