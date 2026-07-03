@@ -37,13 +37,13 @@ export function init(container, windowId)
                     <div class="outnt-embed">
                         <iframe frameborder="0" 
                         src="https://itch.io/embed/3457969?linkback=true&amp;border_width=0&amp;bg_color=050520&amp;fg_color=00ff41&amp;link_color=008f11&amp;border_color=363636" 
-                        width="550" height="165"><a href="https://hamsoft23.itch.io/outnt">OUTN'T - COMING JUNE 16 by sagudelo</a>
+                        width="550" height="165"><a href="https://hamsoft23.itch.io/outnt">OUTN'T by sagudelo</a>
                         </iframe>
                     </div>
 
                 <div class="outnt-footer">
                     <span class="outnt-developer">by <a href="https://sagudelo.com/" target="_blank" rel="noopener noreferrer"> sagudelo </a></span>
-                    <span class="outnt-version">V.0.9.5</span>
+                    <span class="outnt-version">V.1.0.0</span>
                 </div>
             </div>
         </div>
